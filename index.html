@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://bootswatch.com/5/sketchy/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form id="formularioCarta">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" >
+            </div>
+            <div class="mb-3">
+                <label for="edicion" class="form-label">Edicion</label>
+                <input type="text" class="form-control" id="edicion" name="edicion" >
+              </div>
+              <div class="mb-3">
+                <label for="stock" class="form-label">Cantidad en Stock</label>
+                <input type="number" class="form-control" id="stock" name="stock" >
+              </div>
+              <div class="mb-3">
+                <label for="precio" class="form-label">Precio</label>
+                <input type="number" class="form-control" id="precio" name="precio" >
+              </div>
+            <button type="submit" class="btn btn-primary">Cargar carta</button><br><br>
+          </form>
+    </div> <br> <br>
+
+    <button class="btn btn-success" id="mostrarStock">Mostrar Stock</button>
+    <div id="divCartas" class="row"></div>
+    <br><br>
+    
+    <!-- Boton Modal -->
+    <button type="button" class="btn btn-info" id="botonModal">Queres contactarnos?</button>
+
+    <!--Aqui va el modal que quiero cargar-->
+    <div class="modal" tabindex="-1" id="ventanaModal"></div>
+
+    <!--Boton con animaciones-->
+    <button class="btn btn-info" id="botonAnimacion">Quienes somos?</button>
+    <br><br>
+    <p id="quienesSomos">Somos un local con venta al publico de todo tipo de juegos de cartas coleccionables. Nos especializamos en Cartas Magic y contamos con el stock mas grande y variado de Argentina! Nos encontras en Av. Corrientes 992, frente al Obelisco.</p>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
